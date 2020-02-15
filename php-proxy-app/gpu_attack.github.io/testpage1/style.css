@@ -1,0 +1,27 @@
+h1 {
+    font-size: 3.5vw;
+  }
+  h2 {
+    font-size: 3.0vh;
+  }
+  h3 {
+    font-size: 2.7vh;
+  }
+  p {
+    font-size: 2.3vmin;
+  }
+  li {
+    font-size: 2.3vmin;
+  }
+  .button {
+    background-color: 	gainsboro;
+    color: black;
+    padding: 1vmin 3vmin;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vmin;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.div{font-size:2.3vmin} 

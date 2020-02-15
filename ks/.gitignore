@@ -1,0 +1,18 @@
+# dependencies  npm包文件
+/node_modules
+
+# production  打包文件
+/build
+
+# misc 
+.DS_Store
+
+# data
+/data
+
+/keystroke_dataset
+
+/__pycache__
+
+/images
+
