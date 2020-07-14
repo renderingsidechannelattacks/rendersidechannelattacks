@@ -15,7 +15,7 @@ source venv/bin/activate
 sudo pip install Flask   
 sudo python __init__.py 
 ### create apache
-sudo nano /etc/apache2/sites-available/html2markdown.conf
+sudo nano /etc/apache2/sites-available/html2markdown.conf  
 Also we nned change the ServerName, WSGIScriptAlia and PATH  
 #### start virtual host
 sudo a2ensite html2markdown  
