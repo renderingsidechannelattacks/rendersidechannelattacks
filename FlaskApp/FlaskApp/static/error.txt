@@ -1,0 +1,14 @@
+[Fri May 15 19:28:52.582417 2020] [wsgi:error] [pid 728] [client 216.164.246.104:57156] mod_wsgi (pid=728): Target WSGI script '/home/ubuntu/Sites/FlaskApp/flaskapp.wsgi' cannot be loaded as Python module.
+[Fri May 15 19:28:52.582442 2020] [wsgi:error] [pid 728] [client 216.164.246.104:57156] mod_wsgi (pid=728): Exception occurred processing WSGI script '/home/ubuntu/Sites/FlaskApp/flaskapp.wsgi'.
+[Fri May 15 19:28:52.582456 2020] [wsgi:error] [pid 728] [client 216.164.246.104:57156] Traceback (most recent call last):
+[Fri May 15 19:28:52.582473 2020] [wsgi:error] [pid 728] [client 216.164.246.104:57156]   File "/home/ubuntu/Sites/FlaskApp/flaskapp.wsgi", line 7, in <module>
+[Fri May 15 19:28:52.582496 2020] [wsgi:error] [pid 728] [client 216.164.246.104:57156]     from FlaskApp import app as application
+[Fri May 15 19:28:52.582504 2020] [wsgi:error] [pid 728] [client 216.164.246.104:57156]   File "/home/ubuntu/Sites/FlaskApp/FlaskApp/__init__.py", line 8, in <module>
+[Fri May 15 19:28:52.582514 2020] [wsgi:error] [pid 728] [client 216.164.246.104:57156]     import numpy as np
+[Fri May 15 19:28:52.582520 2020] [wsgi:error] [pid 728] [client 216.164.246.104:57156]   File "/usr/local/lib/python2.7/dist-packages/numpy/__init__.py", line 140, in <module>
+[Fri May 15 19:28:52.582529 2020] [wsgi:error] [pid 728] [client 216.164.246.104:57156]     from . import _distributor_init
+[Fri May 15 19:28:52.582544 2020] [wsgi:error] [pid 728] [client 216.164.246.104:57156] ImportError: cannot import name _distributor_init
+
+
+
+https://stackoverflow.com/questions/30642894/getting-flask-to-use-python3-apache-mod-wsgi
