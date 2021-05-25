@@ -27,8 +27,14 @@ rendersidechannelattacks/FlaskApp/FlaskApp/templates/ is for all html files and 
 In our basic collect version. The html file is rendersidechannelattacks/FlaskApp/FlaskApp/templates/aquarium/aquarium.html and js file is rendersidechannelattacks/FlaskApp/FlaskApp/static/aquarium.js /    
 In the js file, The core part is on the line 1757 function onAnimationFrame()
 
-First Header | Second Header
------------- | -------------
+### History sniffing attack
+In our basic collect version. The html file is rendersidechannelattacks/FlaskApp/FlaskApp/templates/aquarium/aquarium.html and js file is rendersidechannelattacks/FlaskApp/FlaskApp/static/aquarium.js /   
+Functionality | Code | Description
+Initialization | 1855-1876 | For different devices, give a similar workload.
+Denoising | ------------- | -------------
+Denoising | ------------- | -------------
+Denoising | ------------- | -------------
+Denoising | ------------- | -------------
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
 
