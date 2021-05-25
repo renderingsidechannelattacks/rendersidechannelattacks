@@ -15,7 +15,7 @@ We deploy this project on Apache2 + Flask. We also show the demo on http://rende
 `sudo pip install Flask  `  
 `sudo python __init__.py `  
 ### create apache
-`sudo nano /etc/apache2/sites-available/html2markdown.conf ` 
+`sudo nano /etc/apache2/sites-available/html2markdown.conf `   
 Also we need change the ServerName, WSGIScriptAlia and PATH  
 #### start virtual host
 `sudo a2ensite html2markdown  `  
