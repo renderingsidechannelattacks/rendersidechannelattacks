@@ -30,16 +30,14 @@ In the js file, The core part is on the line 1757 function onAnimationFrame()
 ### History sniffing attack
 In our basic collect version. The html file is rendersidechannelattacks/FlaskApp/FlaskApp/templates/aquarium/aquarium.html and js file is rendersidechannelattacks/FlaskApp/FlaskApp/static/aquarium.js /   
 Functionality | Code | Description
+------------ | -------------| -------------
 Initialization | 1855-1876 | For different devices, give a similar workload.
 Denoising | ------------- | -------------
 Denoising | ------------- | -------------
 Denoising | ------------- | -------------
 Denoising | ------------- | -------------
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+
 
 ##### init
 On the line 1815, we will add which Website we want to test to the array. 
