@@ -5,7 +5,7 @@ To demonstrate the channel’s feasibility, we design and im-plement a prototype
 We deploy this project on Apache2 + Flask. We also show the demo on http://renderingsidechannelattacks.com:8080/ . 
 ## Deploy(Ubuntu Apache2 + Flask)
 ### install mod_wsgi
-`sudo apt-get install libapache2-mod-wsgi python-dev  `
+`sudo apt-get install libapache2-mod-wsgi python-dev  `\n
 `sudo a2enmod wsgi  `
 ### install Flask
 `sudo apt-get install python-pip  `
