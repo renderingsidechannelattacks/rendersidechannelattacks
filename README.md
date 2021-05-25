@@ -32,10 +32,10 @@ In our basic collect version. The html file is rendersidechannelattacks/FlaskApp
 Functionality | Code | Description
 ------------ | -------------| -------------
 Initialization | 1855-1876 | For different devices, give a similar workload.
-Denoising | ------------- | -------------
-Denoising | ------------- | -------------
-Denoising | ------------- | -------------
-Denoising | ------------- | -------------
+Data Collection | 1890-1980 | Collecting data.
+Denoising | 2042-2084 | Algorithm 1 Denoising.
+Outlier Detection | 2094-2101 | Algorithm 2 Max-min Outlier Detection
+DTW-M | 2127-2155 | Algorithm DTW
 
 
 
