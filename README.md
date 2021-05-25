@@ -1,9 +1,9 @@
-# rendersidechannelattacks  
-We study a new type of side channel in which a cross-origin adversary targets incremental rendering and measures the rendering performance between consecutive frames over time.  
-This is the prototype, open-source framework, called SideR, and successfully launched three types of attacks, namely history sniffing, runtime website fingerprinting and convert channel, based on the framework.  
-## environment  
+# Rendersidechannelattacks  
+we design a novelty rendering contentionchannel. Specifically, we stress the browser’s rendering re-source with a stable, self-adjustable WebGL program and mea-sure the time taken to render a sequence of frames. The mea-sured time sequence is further used to infer any co-renderingevent of the browser.  
+To demonstrate the channel’s feasibility, we design and im-plement a prototype, open-source framework, calledSIDER,to launch four attacks using the rendering contention channel,which are (i) cross-browser, cross-mode cookie synchroniza-tion, (ii) history sniffing, (iii) website fingerprinting, and (iv)keystroke logging.  
+## Environment  
 We deploy this project on Apache2 + Flask. We also show the demo on http://renderingsidechannelattacks.com:8080/ . 
-## deploy(Ubuntu)
+## Deploy(Ubuntu)
 ### install mod_wsgi
 sudo apt-get install libapache2-mod-wsgi python-dev  
 sudo a2enmod wsgi  
@@ -20,11 +20,18 @@ Also we need change the ServerName, WSGIScriptAlia and PATH
 #### start virtual host
 sudo a2ensite html2markdown  
 sudo service apache2 restart  
-## collecting code part 
+
+## Code repository
 We have different versions code for collecting different data and we will show one version.  
 rendersidechannelattacks/FlaskApp/FlaskApp/templates/ is for all html files and rendersidechannelattacks/FlaskApp/FlaskApp/static/ us for others like js files.  
 In our basic collect version. The html file is rendersidechannelattacks/FlaskApp/FlaskApp/templates/aquarium/aquarium.html and js file is rendersidechannelattacks/FlaskApp/FlaskApp/static/aquarium.js /    
 In the js file, The core part is on the line 1757 function onAnimationFrame()
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
 ##### init
 On the line 1815, we will add which Website we want to test to the array. 
 ##### adjust workload
