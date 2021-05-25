@@ -1,9 +1,9 @@
 # Rendersidechannelattacks  
 we design a novelty rendering contentionchannel. Specifically, we stress the browser’s rendering re-source with a stable, self-adjustable WebGL program and mea-sure the time taken to render a sequence of frames. The mea-sured time sequence is further used to infer any co-renderingevent of the browser.  
-To demonstrate the channel’s feasibility, we design and im-plement a prototype, open-source framework, calledSIDER,to launch four attacks using the rendering contention channel,which are (i) cross-browser, cross-mode cookie synchroniza-tion, (ii) history sniffing, (iii) website fingerprinting, and (iv)keystroke logging.  
+To demonstrate the channel’s feasibility, we design and im-plement a prototype, open-source framework, calledSIDER,to launch four attacks using the rendering contention channel,which are (i) cross-browser, cross-mode cookie synchronization, (ii) history sniffing, (iii) website fingerprinting, and (iv)keystroke logging.  
 ## Environment  
 We deploy this project on Apache2 + Flask. We also show the demo on http://renderingsidechannelattacks.com:8080/ . 
-## Deploy(Ubuntu)
+## Deploy(Ubuntu Apache2 + Flask)
 ### install mod_wsgi
 sudo apt-get install libapache2-mod-wsgi python-dev  
 sudo a2enmod wsgi  
@@ -21,11 +21,22 @@ Also we need change the ServerName, WSGIScriptAlia and PATH
 sudo a2ensite html2markdown  
 sudo service apache2 restart  
 
+## Deploy(Ubuntu PHP-Proxy)
+will add this part later.
+
 ## Code repository
 We have different versions code for collecting different data and we will show one version.  
 rendersidechannelattacks/FlaskApp/FlaskApp/templates/ is for all html files and rendersidechannelattacks/FlaskApp/FlaskApp/static/ us for others like js files.  
-In our basic collect version. The html file is rendersidechannelattacks/FlaskApp/FlaskApp/templates/aquarium/aquarium.html and js file is rendersidechannelattacks/FlaskApp/FlaskApp/static/aquarium.js /    
-In the js file, The core part is on the line 1757 function onAnimationFrame()
+
+### Proxy Server(escape option)
+<div class="text-blue mb-2">
+will add this part later.
+
+### Cross-browser, cross-mode cookie synchronization
+<div class="text-blue mb-2">
+will add this part when I update the code.
+1. Change 01 --> word
+2. Automatic deployment
 
 ### History sniffing attack
 In our basic collect version. The html file is rendersidechannelattacks/FlaskApp/FlaskApp/templates/aquarium/aquarium.html and js file is rendersidechannelattacks/FlaskApp/FlaskApp/static/aquarium.js /   
@@ -39,6 +50,8 @@ DTW-M | 2127-2155 | Algorithm DTW
 
 ### Website fingerprinting attack
 Share Initialization, Data Collection and Denoising part with History sniffing.
+<div class="text-blue mb-2">
+Will add model part
 
 ### Keystroke logging attack
 #### Prerequisite
