@@ -37,15 +37,25 @@ Denoising | 2042-2084 | Algorithm 1 Denoising.
 Outlier Detection | 2094-2101 | Algorithm 2 Max-min Outlier Detection
 DTW-M | 2127-2155 | Algorithm DTW
 
+### Website fingerprinting attack
+Share Initialization, Data Collection and Denoising part with History sniffing.
 
+### Keystroke logging attack
+#### Prerequisite
+`npm install robotjs`
 
-##### init
-On the line 1815, we will add which Website we want to test to the array. 
-##### adjust workload
-On the line 1853, we will make the WebGL project has balance workload for different computer before we collect data. 
-##### collect data
-On the line 1888, we collect data.
-##### post data
-On the line 2002, we send data to server.
-##### History sniffing online analyze
-On the line 2038, we have a online version for history sniffing analyze.
+#### Procedure
+1. modify in `ks_collect_data.js` line 107 to switch to the data file you like
+2. close all chrome windows
+3. open <http://3.221.81.120/gpu_attack.github.io/aquarium/aquarium.html> in a new chrome window
+4. open <http://www.google.com/> in a new chrome window
+5. select search box
+6. run “node ks_collect_data.js”
+7. **SWITCH TO GOOGLE SEARCH BOX!!!**
+8. get the data!
+
+#### Data
+
+local: [timestamp] list, [key] list
+
+server: [timestamp, how many seconds each frame takes up] list
