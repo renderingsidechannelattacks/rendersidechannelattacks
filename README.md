@@ -5,21 +5,21 @@ To demonstrate the channel’s feasibility, we design and im-plement a prototype
 We deploy this project on Apache2 + Flask. We also show the demo on http://renderingsidechannelattacks.com:8080/ . 
 ## Deploy(Ubuntu Apache2 + Flask)
 ### install mod_wsgi
-`sudo apt-get install libapache2-mod-wsgi python-dev  
-sudo a2enmod wsgi  `
+`sudo apt-get install libapache2-mod-wsgi python-dev`   
+`sudo a2enmod wsgi  `  
 ### install Flask
 `sudo apt-get install python-pip  `
 #### we need use virtual environment  
-`sudo pip install virtualenv `
-`source venv/bin/activate  ` 
-`sudo pip install Flask  `
-`sudo python __init__.py `
+`sudo pip install virtualenv `  
+`source venv/bin/activate  `   
+`sudo pip install Flask  `  
+`sudo python __init__.py `  
 ### create apache
 `sudo nano /etc/apache2/sites-available/html2markdown.conf ` 
 Also we need change the ServerName, WSGIScriptAlia and PATH  
 #### start virtual host
-`sudo a2ensite html2markdown  `
-`sudo service apache2 restart  `
+`sudo a2ensite html2markdown  `  
+`sudo service apache2 restart  `  
 
 ## Deploy(Ubuntu PHP-Proxy)
 <div class="text-blue mb-2">
