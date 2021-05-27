@@ -31,9 +31,11 @@ We have different versions code for collecting different data and we will show o
 rendersidechannelattacks/FlaskApp/FlaskApp/templates/ is for all html files and rendersidechannelattacks/FlaskApp/FlaskApp/static/ us for others like js files.  
 
 ### Proxy Server(escape option)
-<div class="text-blue mb-2">
-will add this part later.
-</div>
+Put `php-proxy-app/` into your default php deault diretory.   
+
+Start php `sudo /usr/sbin/apachectl start`, then open http://localhost/php-proxy-app/ in browser.  
+
+Input the address of the object website in the box, remember to include https if necessary. The default prefix is http.  
 
 ### Cross-browser, cross-mode cookie synchronization
 <div class="text-blue mb-2">
