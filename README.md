@@ -22,30 +22,25 @@ Also we need change the ServerName, WSGIScriptAlia and PATH
 `sudo service apache2 restart  `  
 
 ## Deploy(Ubuntu PHP-Proxy)
-<div class="text-blue mb-2">
-will add this part later.
-</div>
+Put `php-proxy-app/` into your default php deault diretory.   
 
+Start php `sudo /usr/sbin/apachectl start`.
 ## Code repository
 We have different versions code for collecting different data and we will show one version.  
 rendersidechannelattacks/FlaskApp/FlaskApp/templates/ is for all html files and rendersidechannelattacks/FlaskApp/FlaskApp/static/ us for others like js files.  
 
 ### Proxy Server(escape option)
-Put `php-proxy-app/` into your default php deault diretory.   
-
-Start php `sudo /usr/sbin/apachectl start`, then open http://localhost/php-proxy-app/ in browser.  
-
-Input the address of the object website in the box, remember to include https if necessary. The default prefix is http.  
+1. Open http://localhost/php-proxy-app/ in browser.
+2. Input the address of the object website in the box, remember to include https if necessary. The default prefix is http.  
 
 ### Cross-browser, cross-mode cookie synchronization
-<div class="text-blue mb-2">
-will add this part when I update the code.
-1. Change 01 --> word
-2. Automatic deployment
-</div>
+1. Open http://localhost/senddatapre/ and input the send message.  
+2. Open http://localhost/receivedata/ in a new window.
 
 ### History sniffing attack
 In our basic collect version. The html file is rendersidechannelattacks/FlaskApp/FlaskApp/templates/aquarium/aquarium.html and js file is rendersidechannelattacks/FlaskApp/FlaskApp/static/aquarium.js /   
+1. Open rendersidechannelattacks/FlaskApp/FlaskApp/static/aquarium.js /  and input the website you want to test in line 1838.
+2. Run http://localhost/test/.  
 Functionality | Code | Description
 ------------ | -------------| -------------
 Initialization | 1855-1876 | For different devices, give a similar workload.
@@ -56,9 +51,9 @@ DTW-M | 2127-2155 | Algorithm DTW
 
 ### Website fingerprinting attack
 Share Initialization, Data Collection and Denoising part with History sniffing.
-<div class="text-blue mb-2">
-Will add model part
-</div>
+1. Add test website lit in rendersidechannelattacks/FlaskApp/FlaskApp/static/aquarium_Collect.js /
+2. Open http://localhost/collectdataNC/ to collect no cache data.
+3. Open http://localhost/collectdataAC/ to collect no cache data.
 
 ### Keystroke logging attack
 #### Prerequisite
