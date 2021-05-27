@@ -40,7 +40,9 @@ rendersidechannelattacks/FlaskApp/FlaskApp/templates/ is for all html files and 
 ### History sniffing attack
 In our basic collect version. The html file is rendersidechannelattacks/FlaskApp/FlaskApp/templates/aquarium/aquarium.html and js file is rendersidechannelattacks/FlaskApp/FlaskApp/static/aquarium.js /   
 1. Open rendersidechannelattacks/FlaskApp/FlaskApp/static/aquarium.js /  and input the website you want to test in line 1838.
-2. Run http://localhost/test/.  
+2. Run http://localhost/test/.    
+
+
 Functionality | Code | Description
 ------------ | -------------| -------------
 Initialization | 1855-1876 | For different devices, give a similar workload.
