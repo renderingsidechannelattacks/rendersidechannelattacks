@@ -1,4 +1,4 @@
-# Rendersidechannelattacks  
+# Rendering Contention Channel Attacks
 We design a novelty rendering contentionchannel. Specifically, we stress the browser’s rendering re-source with a stable, self-adjustable WebGL program and mea-sure the time taken to render a sequence of frames. The mea-sured time sequence is further used to infer any co-renderingevent of the browser.  
 To demonstrate the channel’s feasibility, we design and im-plement a prototype, open-source framework, calledSIDER,to launch four attacks using the rendering contention channel,which are (i) cross-browser, cross-mode cookie synchronization, (ii) history sniffing, (iii) website fingerprinting, and (iv)keystroke logging.  
 ## Environment  
@@ -69,7 +69,7 @@ Share Initialization, Data Collection and Denoising part with History sniffing.
 4. open <http://www.google.com/> in a new chrome window
 5. select search box
 6. run “node ks_collect_data.js”
-7. **SWITCH TO GOOGLE SEARCH BOX!!!**
+7. switch to google search box. 
 8. get the data!
 
 #### Data
