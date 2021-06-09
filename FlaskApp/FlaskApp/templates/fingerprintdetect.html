@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script src={{ url_for('static', filename = 'fpCollect.min.js')}}></script>
+    <script> 
+        console.log("in the test");
+        fpCollect.generateFingerprint().then((fingerprint) => {
+            console.log(fingerprint);
+        });
+        
+    
+    
+    
+    </script>
+
+</body>
+</html>

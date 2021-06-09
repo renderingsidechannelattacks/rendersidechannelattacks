@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+<style>
+	button{
+	height: 100px;
+        width: 100px;
+        outline: none;
+        margin: 10px;
+	}
+</style>
+  </head>
+  <body>
+    <div id="buttonDiv">
+    </div>
+    <div>
+      <p>This is a new html file</p>
+      <p>But where is my button?</p>
+<button type="button" id="testbutton" class="button" onClick=ChangeText() value="Click me!">change text</button>
+    </div>
+  </body>
+<script>
+	var targetExtensionId = "piipjnjhimojplkanbmhgcjpnigmhmei"; 
+	function ChangeText(){
+		chrome.runtime.sendMessage(targetExtensionId, {type: 'MsgFromPage', msg: 'Hello, I am page~'}, function(response) {
+  		console.log(response);
+		});
+		alert("change text here!")
+	}
+</script>
+</html>

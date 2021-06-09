@@ -1,0 +1,51 @@
+- google 
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.google.com%2F%3Fgws_rd%3Dssl>
+- youtube 老版可以
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.youtube.com%2F>
+- tmall
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.tmall.com%2F>
+- [baidu.com](http://baidu.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.baidu.com%2F>
+- [qq.com](http://qq.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.qq.com%2F>
+- [sohu.com](http://sohu.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.sohu.com%2F>
+- [facebook.com](http://facebook.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.facebook.com%2F>
+
+- [Wikipedia.org](http://Wikipedia.org)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.wikipedia.org%2F>
+- [Yahoo.com](https://www.alexa.com/siteinfo/yahoo.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.yahoo.com%2F>
+- 360.cn
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.360.cn%2F>
+- [jd.com](http://jd.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=http%3A%2F%2Fwww.jd.com%2F%3Fcountry%3DUSA>
+- [amazon.com](http://amazon.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.amazon.com%2F>
+- [sina.com.cn](http://sina.com.cn)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.sina.com.cn%2F>
+
+- [live.com](http://live.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Foutlook.live.com%2Fowa%2F>
+
+- [vk.com](http://vk.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fvk.com%2F>
+- [netfix.com](http://netfix.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.netflix.com%2F>
+- [Blogspot.com](http://Blogspot.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.blogger.com%2Fabout%2F%3Fr%3D1-null_user>
+- [alipay.com](http://alipay.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.alipay.com%2F>
+- [Okezone.com](http://Okezone.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.okezone.com%2F>
+
+- [Yahoo.co.jp](http://Yahoo.co.jp)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.yahoo.co.jp%2F>
+
+- [Office.com](http://Office.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.office.com%2F>
+- [bing.com](http://bing.com)
+- <http://3.221.81.120/php-proxy-app/index.php?q=https%3A%2F%2Fwww.bing.com%2F>
+- xinhua.net
+- <http://3.221.81.120/php-proxy-app/index.php?q=http%3A%2F%2Fwww.xinhuanet.com%2F>

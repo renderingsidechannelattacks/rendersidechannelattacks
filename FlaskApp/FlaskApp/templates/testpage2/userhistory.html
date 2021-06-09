@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+  <title>User history test </title>
+  <link href="../jquery-ui-1.8.2.custom/css/ui-lightness/jquery-ui-1.8.2.custom.css" rel="stylesheet" />
+  <script src="../jquery-ui-1.8.2.custom/js/jquery-1.4.2.min.js"></script>
+  <script src="../jquery-ui-1.8.2.custom/js/jquery-ui-1.8.2.custom.min.js"></script>
+  <script src="../khronos/webgl-debug.js"></script>
+  <script src="../tdl/base.js"></script>
+  <script src="aquarium-config.js"></script>
+  <script src="aquarium-common.js"></script>
+  <script src="aquarium.js"></script>
+<!-- end RTD <extrahead> -->
+</head><body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+<div class="section" id="flask">
+<h1>User history test<a class="headerlink" href="#flask" title="Permalink to this headline"></a></h1>
+<P>In this test, we will try to detect the webpage you opened before on the private mode window.<Br />Thus, we need you to follow the instruction to open the webpage one by one on the private mode window.</P>
+<p id = "p1">You need to open <font color = "red"><b>just one </b></font>private mode window.<br />Also, you need make sure <font color = "red"><b>every window </b></font> just open <font color = "red"><b>one tab </b></font> during the test.</p>
+<div  class="div" id = "p2">
+        <ul>
+        <li class="toctree-l2">Windows, Linux, or Chrome OS: Press Ctrl + Shift + n.</a></li>
+        <li class="toctree-l2">Mac: Press ⌘ + Shift + n.</a></li>
+        </ul>
+</div>
+<p id = "p3">You need copy test website address to the private mode window.</p>
+<p id = "p4"><font color = "red"><b></b>http://gpu_attack.shujiangwu.com/aquarium/aquarium.html</font></p></p>
+
+<div class="div" id="txt"></div><br />
+<input type="button" id = "testbotton" class="button" onclick=ChangeText() value="Click this button when the test website already finished." />
+<br /><br /><br />
+
+
+</body>
+
+<script>
+    var c = 0;
+    var t;
+    function timedCount()
+    {
+        //console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+        t = setInterval(animate, 1000);
+    }
+    function animate(){
+        if (ii != 10)
+            document.getElementById('txt').innerHTML = "clock: " + c + "s";
+        c = c + 1;
+        if ( (c == 16) && (ii != 10)){
+            document.getElementById("testbotton").value= 'Next';
+        }
+    }
+    var ii = 0;
+    function ChangeText()
+    {
+        clearInterval(t);
+        if (ii == 0){
+            document.getElementById("p1").innerHTML= "You need to <font color = \"red\"><b>close </b></font>the private mode window and <font color = \"red\"><b>reopen </b></font>the <font color = \"red\"><b>blank page </b></font>on the private mode window.<Br />Also, you need make sure <font color = \"red\"><b>every window </b></font>just open <font color = \"red\"><b>one tab</b></font> during the test.";
+            document.getElementById("p2").innerHTML= "";
+            document.getElementById("p3").innerHTML= "";
+            document.getElementById("p4").innerHTML= "";
+            ii++;
+            console.log("ii",ii);
+        }else if (ii == 1){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of private mode window. (1/8)<br />" + "<font color = \"red\"><b>https://www.qq.com/</b></font>";
+            document.getElementById("p2").innerHTML= "Please <font color = \"red\">don't close </b></font>the private mode window.";
+            document.getElementById("testbotton").value= 'This test will spend 15 seconds.';
+            timedCount();
+            ii++;
+            c = 0;
+        }else if (ii == 2){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of private mode window. (2/8)<br />" + "<font color = \"red\"><b>https://www.tmall.com/</b></font>";
+            // document.getElementById("p2").innerHTML= "Also, you need make sure every window just open one tab during the test.";
+            document.getElementById("testbotton").value= 'This test will spend 15 seconds.';
+            timedCount();
+            ii++;
+            c = 0;
+        }else if (ii == 3){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of private mode window. (3/8)<br />" + "<font color = \"red\"><b>https://www.sohu.com/</b></font>";
+            // document.getElementById("p2").innerHTML= "Also, you need make sure every window just open one tab during the test.";
+            document.getElementById("testbotton").value= 'This test will spend 15 seconds.';
+            timedCount();
+            ii++;
+            c = 0;
+        }else if (ii == 4){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of private mode window. (4/8)<br />" + "<font color = \"red\"><b>https://corporate.jd.com/home/</b></font>";
+            // document.getElementById("p2").innerHTML= "Also, you need make sure every window just open one tab during the test.";
+            document.getElementById("testbotton").value= 'This test will spend 15 seconds.';
+            timedCount();
+            ii++;
+            c = 0;
+        }else if (ii == 5){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of private mode window. (5/8)<br />" + "<font color = \"red\"><b>https://www.weibo.com/us</b></font>";
+            // document.getElementById("p2").innerHTML= "Also, you need make sure every window just open one tab during the test.";
+            document.getElementById("testbotton").value= 'This test will spend 15 seconds.';
+            timedCount();
+            ii++;
+            c = 0;
+        }else if (ii == 6){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of private mode window. (6/8)<br />" + "<font color = \"red\"><b>https://www.360.cn/</b></font>";
+            // document.getElementById("p2").innerHTML= "Also, you need make sure every window just open one tab during the test.";
+            document.getElementById("testbotton").value= 'This test will spend 15 seconds.';
+            timedCount();
+            ii++;
+            c = 0;
+        }else if (ii == 7){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of private mode window. (7/8)<br />" + "<font color = \"red\"><b>https://login.tmall.com/</b></font>";
+            // document.getElementById("p2").innerHTML= "Also, you need make sure every window just open one tab during the test.";
+            document.getElementById("testbotton").value= 'This test will spend 15 seconds.';
+            timedCount();
+            ii++;
+            c = 0;
+        }else if (ii == 8){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of private mode window. (8/8)<br />" + "<font color = \"red\"><b>https://www.blogger.com/about/?r=1-null_user</b></font>";
+            // document.getElementById("p2").innerHTML= "Also, you need make sure every window just open one tab during the test.";
+            document.getElementById("testbotton").value= 'This test will spend 15 seconds.';
+            timedCount();
+            ii++;
+            c = 0;
+        }else if (ii == 9){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of private mode window.<Br> This is our test webgape.<br />" + "<font color = \"red\"><b>http://gpu_attack.shujiangwu.com/aquarium/aquarium.html</b></font>";
+            document.getElementById("p2").innerHTML= "";
+            document.getElementById("testbotton").value= 'Click this button when the test website already finished.';
+            document.getElementById("txt").innerHTML= "";
+            ii++;
+            c = 0;
+        }else if (ii == 10){
+            location.href='./end.html';
+        }
+    }
+</script>

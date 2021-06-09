@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User history test &#8212; Flask 1.0.2 documentation</title>
+  <link href="../jquery-ui-1.8.2.custom/css/ui-lightness/jquery-ui-1.8.2.custom.css" rel="stylesheet" />
+  <script src="../jquery-ui-1.8.2.custom/js/jquery-1.4.2.min.js"></script>
+  <script src="../jquery-ui-1.8.2.custom/js/jquery-ui-1.8.2.custom.min.js"></script>
+  <script src="../khronos/webgl-debug.js"></script>
+  <script src="../tdl/base.js"></script>
+  <script src="aquarium-config.js"></script>
+  <script src="aquarium-common.js"></script>
+  <script src="aquarium1.js"></script>
+<!-- end RTD <extrahead> -->
+</head><body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+<div class="section" id="flask">
+<h1>User history test<a class="headerlink" href="#flask" title="Permalink to this headline"></a></h1>
+<h3>Clear the cache & cookies and open some mainstream websites</h3>
+<p id = "p1">You need close the private mode window.<Br /> And during this test, you don't need to open the private mode window again.</p>
+<p id = "p2">Open another empty window and clear the broswer cache & cookies.</p>
+<p id = "p3">How to clear the broswer cache & cookies?<a class="headerlink" href="#id3" title="Permalink to this headline"></a></p>
+<p id = "p4"><a class="reference internal" href="https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en">You can open this link as a new window to know how to clear the broswer cache & cookies.</a></p>
+
+
+
+<div id="txt"></div><br />
+<input type="button" id = "testbotton" onclick=ChangeText() value="I already open the blank window and clear the broswer cache & cookies." />
+<br /><br /><br />
+</body>
+
+<script>
+    var c = 0;
+    var t;
+    function timedCount()
+    {
+        //console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+        document.getElementById('txt').innerHTML = "clock: " + c + "s";
+        c = c + 1;
+        t = setTimeout("timedCount()",1000);
+        if (c == 15)
+            document.getElementById("testbotton").value= 'Next';
+    }
+    var ii = 0;
+    function ChangeText()
+    {
+        // console.log("iiiiiiiiiiiii",ii);
+        if (ii == 0){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of another window.<br />" + "https://www.qq.com/";
+            document.getElementById("p2").innerHTML= "Also, you need make sure every window just open one tab during the test.";
+            document.getElementById("p3").innerHTML= "";
+            document.getElementById("p4").innerHTML= "";
+            document.getElementById("testbotton").value= 'Next';
+            ii++;
+        }else if (ii == 1){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of private mode window.<br />" + "https://www.tmall.com/";
+            document.getElementById("p2").innerHTML= "Also, you need make sure every window just open one tab during the test.";
+            document.getElementById("testbotton").value= 'This test will spend 15 seconds.';
+            ii++;
+            c = 0;
+        }else if (ii == 2){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of private mode window.<br />" + "https://www.sohu.com/";
+            document.getElementById("p2").innerHTML= "Also, you need make sure every window just open one tab during the test.";
+            document.getElementById("testbotton").value= 'This test will spend 15 seconds.';
+            ii++;
+            c = 0;
+        }else if (ii == 3){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of private mode window.<br />" + "https://corporate.jd.com/home/";
+            document.getElementById("p2").innerHTML= "Also, you need make sure every window just open one tab during the test.";
+            document.getElementById("testbotton").value= 'This test will spend 15 seconds.';
+            ii++;
+            c = 0;
+        }else if (ii == 4){
+            document.getElementById("p1").innerHTML= "Please copy the address to the tab of private mode window.<br />" + "https://www.weibo.com/us";
+            document.getElementById("p2").innerHTML= "Also, you need make sure every window just open one tab during the test.";
+            document.getElementById("testbotton").value= 'This test will spend 15 seconds.';
+            ii++;
+            c = 0;
+        }else if (ii == 5){
+            location.href='./userhistorytest.html';
+        }
+    }
+</script>

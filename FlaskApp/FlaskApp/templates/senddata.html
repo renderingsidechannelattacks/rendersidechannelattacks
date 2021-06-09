@@ -1,0 +1,132 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h3>Send page</h3>
+    <p>Message data:</p><p id = "message">{{ title }}</p>
+    <p>Please use another window open http://3.15.200.178:8080/receivedata</p>
+    <div id="content"> Waiting the receive page...</div>
+    <div>
+      <iframe id = "testiframe0" src = "{{url_for('iframe')}}" height = "800px" width = "800px" > </iframe>
+      <!-- <iframe id = "testiframe1" src = "{{url_for('iframe')}}" height = "800px" width = "800px"> </iframe> 
+      <iframe id = "testiframe2" src = "{{url_for('iframe')}}" height = "800px" width = "800px"> </iframe>
+      <iframe id = "testiframe3" src = "{{url_for('iframe')}}" height = "800px" width = "800px" > </iframe> -->
+    </div>
+
+    <!-- <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script> -->
+    <script src = {{ url_for('static', filename = 'jquery-ui-1.8.2.custom/js/jquery-1.4.2.min.js')}}></script>
+    <script src = {{ url_for('static', filename = 'jquery-ui-1.8.2.custom/js/jquery-ui-1.8.2.custom.min.js')}}></script>
+    <script>
+        var iframeelement = [];
+        for (let i = 0; i <= 3; i++)
+          iframeelement[i] = document.getElementById('testiframe' + i);
+        var senddata = JSON.stringify(0);
+        var t1 = setInterval(query ,1000);
+        var data,sendnumber, t2;
+        function query() {
+            console.log("send");
+            $.ajax({
+                url: "readytosend",
+                type: "POST",
+                data: senddata,
+                dataType: "json",
+                success: function (data) {
+                    console.log("get the ready to send data",data);
+                    if (data != '0'){
+                      document.getElementById("content").innerHTML ="channel number:" + data + "\n Sending start signal...";
+                      clearInterval(t1);
+                      startsend();
+                    }
+                    
+                }
+            })   
+        }
+      function startsend(){
+        console.log("in the startsend");
+        data = document.getElementById("message").innerHTML;
+        //change to ascii 
+        senddata = []
+        for (i = 0; i < data.length; i++){
+            d = data.charCodeAt(i);
+            d_2 = d.toString(2);
+            // display.push(d_2);
+            senddata.push(d_2.slice(0, 4));
+            senddata.push(d_2.slice(4, 8) + '0');
+        }
+        hamming_dir = {}
+        hamming_dir["0000"] = "00010101";
+        hamming_dir["0001"] = "00000010";
+        hamming_dir["0010"] = "01001001";
+        hamming_dir["0011"] = "01011110";
+        hamming_dir["0100"] = "01100100";
+        hamming_dir["0101"] = "01110011";
+        hamming_dir["0110"] = "00111000";
+        hamming_dir["0111"] = "00101111";
+        hamming_dir["1000"] = "11010000";
+        hamming_dir["1001"] = "11000111";
+        hamming_dir["1010"] = "10001100";
+        hamming_dir["1011"] = "10011011";
+        hamming_dir["1100"] = "10100001";
+        hamming_dir["1101"] = "10110110";
+        hamming_dir["1110"] = "11111101";
+        hamming_dir["1111"] = "11101010";
+        console.log("ascii",senddata);
+        //encode
+        for (i = 0; i < senddata.length; i++)
+          senddata[i] = hamming_dir[senddata[i]];
+        console.log("hamming",senddata);
+        //combine to one string
+        senddata_arr = '';
+        for (i = 0; i < senddata.length; i++)
+          senddata_arr += senddata[i];
+        console.log(senddata_arr);
+
+        // console.log(data);
+        // console.log(data.length);
+        // console.log(performance.now());
+        sendnumber  = -3;
+        t2 = setInterval(sendmessage, 2000);
+      }
+      function sendmessage(){
+        if (sendnumber == 0)
+          document.getElementById("content").innerHTML ="Sending data";
+        if (sendnumber == -1){
+          for (let i = 0; i <= 0; i++)
+          iframeelement[0].src = "{{url_for('iframe')}}";
+        }
+        else if ((sendnumber >= 0) && (senddata_arr[sendnumber] == '0')){iframeelement[0].src = "{{url_for('iframe')}}";}
+        else{
+        for (let i = 0; i <= 0; i++)
+          iframeelement[i].src = "https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1";
+          // iframeelement[i].src ="../static/FirefoxToChrome.mp4" ;
+          // iframeelement[i].pause();
+        }
+        console.log("sending --->",senddata_arr[sendnumber]);
+
+        sendnumber++;
+        if (sendnumber == senddata_arr.length){
+          clearInterval(t2);
+          let tem1 = performance.now()
+          while (performance.now - tem1 < 500);
+          closesend();
+        }
+      }
+      function closesend(){
+
+        var senddata = JSON.stringify(0);
+        $.ajax({
+                url: "endtosend",
+                type: "POST",
+                data: senddata,
+                dataType: "json",
+                success: function (data) {
+                    document.getElementById("content").innerHTML ="finished...";         
+                }
+            })
+
+      }
+ 
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    
+<body>
+    <h2>Cross-browser, cross-mode cookie synchronization demo</h2>
+This is the demo video.
+<br/>
+
+</body>
+<video width="960" height="720" controls>
+    <source src={{ url_for('static', filename="test.mp4") }} type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h3> Chrome privacy mode</h3>
+  <br/>
+
+  <video width="960" height="720" controls>
+    <source src={{ url_for('static', filename="SafariToChrome.mp4") }} type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h3> Chrome && Safari</h3>
+  <br/>
+
+  <video width="960" height="720" controls>
+    <source src={{ url_for('static', filename="FirefoxToChrome.mp4") }} type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h3> Chrome && Firefox</h3>
+  <br/>
+
+  <video width="960" height="720" controls>
+    <source src={{ url_for('static', filename="TorToChrome.mp4") }} type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h3> Chrome && Tor</h3>
+  <br/>
+
+
+<a href="http://renderingsidechannelattacks.com:8080">
+    <br/>
+    <button>Back</button>
+</a>
+</html>

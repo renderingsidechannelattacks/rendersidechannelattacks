@@ -1,0 +1,66 @@
+China
+Tmall.com                         100%     25       30       150
+Baidu.com                         100%     25       20       80
+Qq.com                            100%     40       --       --  (loading time can't test)
+Sohu.com                          80%+     350      400      400 (loading time can't test) 
+Taobao.com                        100%     30       40       180
+Login.tmall.com                   100%     40       50       160
+360.cn                            100%     20       50       250
+Jd.com                            100%     50       100      250 https://www.jd.com/?country=USA
+Sina.com.cn                       90%+     150      150      500
+Weibo.com                         100%     30       30       150
+
+
+
+India	
+Flipkart.com                      worked
+Onlinesbi.com                     worked
+Indiatimes.com                    didn't work ?????
+	
+Brazil	
+Globo.com						  worked
+Uol.com.br						  worked // change code
+Mercadolivre.com.br 
+Metropoles.com
+	
+Japan	Yahoo.co.jp
+	Amazon.co.jp
+	Google.co.jp
+	Rakuten.co.jp
+	Nicovideo.jp
+	
+russia	Yandex.ru
+	Mail.ru
+	Ok.ru
+	Avito.ru
+	Google.ru
+	
+Mexico	Google.com.mx
+	Thestartmagazine.com
+	Mercadolibre.com.mx
+	Amazon.com.mx
+	Caliente.mx
+	
+Germany	Google.de
+	Amazon.de
+	Ebay.de
+	Ebay-kleinanzeigen.de
+	Web.de
+	
+Indonesia	Okezone.com
+	Tribunnews.com
+	Detik.com
+	Liputan6.com
+	Kompas.com
+	
+Pakistan	Google.com.pk
+	Urdupoint.com
+	Daraz.pk
+	Fiverr.com
+	Olx.com.pk
+	
+UK	Amazon.co.uk
+	Google.co.uk
+	Bbc.co.uk
+	Ladbible.com
+	Ebay.co.uk 

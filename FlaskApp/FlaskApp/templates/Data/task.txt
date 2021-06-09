@@ -1,0 +1,7 @@
+1. balance fps(already finsihed in local, still need test)
+2. collect more data at same time (not finsihed) (amazon block account)
+3. analysis the noise
+MFCC / FFT   remove noise
+Hamming distance(we used right now) vs DTW vs Perarson correlation   decided
+https://www.cnblogs.com/xbinworld/archive/2012/09/24/2700572.html
+ 

@@ -1,0 +1,33 @@
+{
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "bing.png"
+  },
+  "content_scripts": [ {
+      "js": [ "jquery.min.js", "content.js" ],
+      // "matches": [ "https://*.youtube.com/*" ],
+      "matches": ["<all_urls>"],
+      "run_at":"document_start"
+   } 
+  ],
+  "description": "This is an chrome extension serves to supervise users' behavior during our expriments",
+  "icons": {
+    "128": "bing.png"
+  },
+  "name": "side_channel_addon",
+  "permissions": [
+    "alarms",
+    "tabs",
+    "webNavigation",
+    "*://*.google.com/"
+   ],
+  "externally_connectable": {
+    // the address should be modified to gpu_attack.wushujiang.com
+    "matches": ["http://3.221.81.120/test/new.html"]
+  },
+  "version": "1.0.0",
+  "manifest_version": 2
+}
