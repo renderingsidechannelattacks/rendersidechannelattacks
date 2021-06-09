@@ -70,7 +70,7 @@ Share Initialization, Data Collection and Denoising part with History sniffing.
 5. select search box
 6. run “node ks_collect_data.js”
 7. switch to google search box. 
-8. get the data!
+8. get the data
 
 #### Data
 
